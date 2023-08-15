@@ -1,0 +1,64 @@
+header{
+    height: 100vh;
+    padding: 7rem;
+    overflow: hidden;
+}
+.header-container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+/*================CTA===================*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+/*================SOCIALS===================*/
+.header-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.header-socials::after{
+    content:'' ;
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+/*================IMAGE===================*/
+.me img{
+    width: 35vw;
+}
+/*================Scroll Down===================*/
+.scroll-down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+  /*===================Media Query (Medium DEVICES) ===============*/
+  @media screen and (max-width: 1024px) {
+    header{
+        height: 60vh;
+    }
+  }
+  /*===================Media Query (SMALL DEVICES) ===============*/
+  
+  @media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    .header-socials,
+    .scroll-down{
+        display: none;
+    }
+  }
+  
